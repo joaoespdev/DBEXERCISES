@@ -36,8 +36,9 @@ public class AgendaTelefonica {
     }
 
     public void ExcluirContatos(int numero) {
-        if (numero >= 0 && numero < contatos.size()) {
-            contatos.remove(numero - 1);
+        int indice = numero - 1;
+        if (indice >= 0 && indice < contatos.size()) {
+            contatos.remove(indice);
         } else {
             System.out.println("Número da lista inválido.");
         }
